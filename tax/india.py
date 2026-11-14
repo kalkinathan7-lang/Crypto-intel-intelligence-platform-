@@ -30,4 +30,3 @@ def estimate(transactions: list[dict], rules: dict | None = None) -> dict:
                              "Rules file status: " + ("verified on " + str(r["last_verified"]) if verified else "UNVERIFIED - confirm with official sources"),
                              "Losses cannot be set off under the assumed rules; reporting obligations (Schedule VDA) not computed.",
                              "TDS actually deducted depends on exchange/payer and thresholds; shown figure is a simplification."])
-  
