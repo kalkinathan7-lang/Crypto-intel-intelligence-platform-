@@ -57,4 +57,3 @@ def metrics(trades: list, max_dd: float) -> dict:
                 max_drawdown=max_dd, avg_R=sum(t["R_mult"] for t in trades) / len(net), net_profit=sum(net),
                 avg_hours=sum(t["hours"] for t in trades) / len(net), long_net=sum(by("LONG")), short_net=sum(by("SHORT")),
                 largest_win=max(net), largest_loss=min(net), max_consecutive_losses=best)
-          
