@@ -72,4 +72,3 @@ def fetch_rss(url: str, timeout: int = 15) -> list[dict]:
         except Exception: continue
         out.append(dict(headline=t.strip(), url=l.strip(), published_ms=ms, source_feed=url))
     return out
-          
