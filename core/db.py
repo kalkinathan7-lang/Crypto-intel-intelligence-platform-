@@ -65,4 +65,3 @@ class DB:
     def save_report(self, symbol: str, agent: str, body: dict) -> None:
         self.x("INSERT INTO reports(symbol,agent,created_ms,body) VALUES(?,?,?,?)",
                (symbol, agent, now_ms(), json.dumps(body, default=str)))
-          
