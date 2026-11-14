@@ -1,5 +1,6 @@
 """Streamlit front-end. UI only: every calculation lives in the modules (no strategy logic duplicated here)."""
-import asyncio, json, os, time
+import asyncio, json, os, sys, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # make project folders importable on any host
 import pandas as pd
 import streamlit as st
 try:
@@ -11,7 +12,7 @@ from core.db import DB, now_ms
 from futures.explain import explain
 from futures.scanner import scan, evaluate_pair
 from futures.backtest import backtest
-from clients.coindcx import CoinDCXClient
+from exchange_clients.coindcx import CoinDCXClient
 from investment.agents import research
 from investment.scoring import sub_scores, composite, rank
 from investment.portfolio import allocate, dca_plan, exit_plan, zone_from_technicals

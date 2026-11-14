@@ -12,7 +12,7 @@ Not financial or tax advice. No returns are guaranteed.
 | Futures engine, validation, SL/TP, sizing, trade management, DB, config | Implemented + unit-tested (synthetic test data) |
 | Backtester | Implemented; smoke-tested only (no validated performance claims; run your own train/validation/out-of-sample split) |
 | Investment agents, scoring, ranking, portfolio/DCA/exit, news verification, tax maths | Implemented + unit-tested (synthetic data) |
-| **CoinDCX API client** | **NOT VERIFIED** — endpoints written from memory; build environment had no internet. Check https://docs.coindcx.com and fix `clients/coindcx.py` constants if needed |
+| **CoinDCX API client** | **NOT VERIFIED** — endpoints written from memory; build environment had no internet. Check https://docs.coindcx.com and fix `exchange_clients/coindcx.py` constants if needed |
 | CoinGecko provider | NOT VERIFIED (same reason) |
 | TVL / token unlocks / on-chain / audits / dev activity / holder concentration | **No provider wired.** Fields stay `None` ("unavailable"); judge treats them as missing evidence. Candidates: DefiLlama, Token Unlocks, Glassnode/Dune, GitHub — some need paid keys |
 | News | RSS fetch + verification logic implemented; feeds are user-configured; live fetch not verified |
