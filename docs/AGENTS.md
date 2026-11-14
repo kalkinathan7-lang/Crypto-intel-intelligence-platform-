@@ -1,2 +1,6 @@
-Investment agents (release 1: deterministic evidence engines, NOT LLMs)
-Bullish and Bearish analysts each read raw CoinData independently and emit evidence items (claim, value, strength, source) + uncertainties. The Judge re-verifies each claim against raw data, rejects unsupported ones, flags inconsistent data, and decides: AVOID if verified critical risk, or verified risk >= 2.0 / > bull+0.5; WAIT if completeness < 40% or evidence mixed; BUY only if verified strengths >= 2.0, risks < 1.0, completeness >= 60%. Scoring: sub-scores 0-100 or None; composite = weighted mean of available scores minus up to 30-pt missing-data penalty; news score unavailable until a news feed is wired per coin. An LLM layer for narrative could be added; it must not override these rules.
+# Investment agents (release 1: deterministic evidence engines, NOT LLMs)
+Bullish and Bearish analysts each read raw `CoinData` independently and emit evidence items (claim, value, strength, source) + uncertainties.
+The Judge re-verifies each claim against raw data, rejects unsupported ones, flags inconsistent data, and decides:
+AVOID if verified critical risk, or verified risk >= 2.0 / > bull+0.5; WAIT if completeness < 40% or evidence mixed; BUY only if verified strengths >= 2.0, risks < 1.0, completeness >= 60%.
+Scoring: sub-scores 0-100 or None; composite = weighted mean of available scores minus up to 30-pt missing-data penalty; news score unavailable until a news feed is wired per coin.
+An LLM layer for narrative could be added; it must not override these rules.
