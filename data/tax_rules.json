@@ -1,0 +1,11 @@
+{
+  "_WARNING": "STATUS: UNVERIFIED. These defaults were NOT checked against official sources at build time (no internet). Confirm every value on incometax.gov.in / Finance Act text before use, then set last_verified and source.",
+  "last_verified": null,
+  "source": null,
+  "vda_tax_rate": 0.30,
+  "cess_rate": 0.04,
+  "tds_194s_rate": 0.01,
+  "tds_threshold_note": "Thresholds depend on payer category; verify (not modelled).",
+  "loss_offset_allowed": false,
+  "deduction_allowed": "cost of acquisition only"
+}
