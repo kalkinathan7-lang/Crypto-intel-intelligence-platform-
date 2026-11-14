@@ -204,4 +204,3 @@ def research(d: CoinData) -> dict:
     """Runs the three agents in order; bull/bear never see each other's output."""
     bull, bear = BullishAnalyst().analyze(d), BearishAnalyst().analyze(d)
     return {"symbol": d.symbol, "bullish": bull.to_dict(), "bearish": bear.to_dict(), "judge": IndependentJudge().judge(d, bull, bear)}
-    
